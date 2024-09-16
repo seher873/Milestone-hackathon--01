@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+    <h1>Shareable Resume Builder</h1>
+
+    <form id="resume-form">
+
+
+        <legend>
+    <h3>Personal Information</h3></legend>
+
+    <label for="Username">Username</label><br>
+    <input type="text"id="username"placeholder="Enter your username"required><br>
+    <label for="name">Name</label><br>
+    <input type="text"id="name"placeholder="Enter your name"required><br>
+
+<label for="email">Email</label><br>
+    <input type="email" id="email" placeholder="Enter your email" required /><br>
+
+<label for="phone">Number</label><br>
+    <input type="number" id="phone" placeholder="Enter your number" required /><br>
+
+
+
+    <legend>Education</legend>
+<label for="education">Education</label>
+<textarea  id="education" placeholder="Enter your education"rows="4"required></textarea>
+</fieldset>
+
+<fieldset>
+   <legend>Experience</legend>
+   <label for="Experience"></label>
+   <textarea  id="experience" placeholder="Enter your experience"rows="4"required></textarea>
+
+
+<fieldset>
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills"></label>
+    <textarea  id="skills" placeholder="Enter your skills"rows="4"required></textarea>
+</fieldset>
+
+<button type="submit"><b>Genrate Resume</b></button>
+    </form>
+    <br>
+<!-- Dynamically Editable Generated Resume will appear here -->
+    <div id="resume-display"contenteditable="true">
+      </div>
+      <br>
+    
+      <!--section for shareable link and download option -->
+       <div id="shareable-link-container">
+        <h2>Shareable Link</h2>
+
+        <p>Here is youre resume link</p>
+        <a href="#" id="shareable-link"target="blank"></a>
+        <br>
+        <button id="download-pdf"><B>Download as PDF</B></button>
+    </div>
+      <script src="./app.js"></script>
+    
+</body>
+</html>
